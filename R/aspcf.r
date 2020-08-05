@@ -30,8 +30,8 @@ aspcf <- function(logR, BAF, pos.unit = "bp", arms = NULL, kmin = 5, gamma = 40,
   }
 
   # Check assembly input:
-  if (!assembly %in% c("hg38", "hg19", "hg18", "hg17", "hg16", "mm7", "mm8", "mm9")) {
-    stop("assembly must be one of hg38, hg19, hg18, hg17 or hg16", call. = FALSE)
+  if (!assembly %in% c("hg38", "hg19", "hg18", "hg17", "hg16", "mm7", "mm8", "mm9", "mm10")) {
+    stop("assembly must be one of hg38, hg19, hg18, hg17, hg16, mm7, mm8, mm9 or mm10", call. = FALSE)
   }
 
   # Check if logR and BAF are files:
