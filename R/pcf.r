@@ -35,7 +35,7 @@ pcf <- function(data, pos.unit = "bp", arms = NULL, Y = NULL, kmin = 5, gamma = 
 
   # Check assembly input:
   if (!assembly %in% c("hg38", "hg19", "hg18", "hg17", "hg16", "mm7", "mm8", "mm9", "mm10")) {
-    stop("assembly must be one of hg38, hg19, hg18, hg17, hg16, mm7, mm8, mm9 or mm10", call. = FALSE)
+    stop("assembly must be one of hg{16, 17, 18, 19, 38}, mm{7, 8, 9, 10}", call. = FALSE)
   }
 
   # Is data a file:
